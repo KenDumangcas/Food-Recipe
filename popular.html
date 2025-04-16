@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Foods</title>
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+
+header {
+    background: #ff5722;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;   
+    }
+    nav {
+    background: #333;
+    padding: 10px;
+    text-align: center;
+    }
+    nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 20px;
+    transition: background 0.3s;
+    }
+    body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    }
+
+    h2 {
+    font-size: 36px;
+    color: black;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    }
+
+    .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    }
+
+    .food-item {
+    width: 260px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    }
+
+    .food-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+    }
+
+    .food-item img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    }
+
+    .food-title {
+    background-color: #ffcc80;
+    color: #333;
+    padding: 12px 0;
+    font-weight: bold;
+    font-size: 18px;
+            
+    }
+
+    .food-content {
+    padding: 20px;
+    text-align: left;
+    font-size: 15px;
+    color: #333;
+    }
+
+    .food-content h4 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #ff5722;
+    }
+
+    .food-content ul {
+    padding-left: 20px;
+    margin-bottom: 10px;
+    }
+
+    .food-content p {
+    margin-top: 5px;
+    line-height: 1.5;
+    }
+
+    .pagination {
+    margin-top: 30px;
+    }
+
+    .pagination a {
+    display: inline-block;
+    padding: 10px 14px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #ff5722;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
+    }
+
+    .pagination a:hover,
+    .pagination a.active {
+     background-color: #ff5722;
+        color: #fff;
+    }
+    nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 20px;
+    transition: background 0.3s;
+    }
+
+    nav a.active2{
+
+    background-color: #ff5722;
+    font-weight: bold;
+    border-radius: 15px;
+
+    }
+    nav a:hover:not(.active2){
+    background-color: gray;
+    border-radius: 15px;
+    }
+
+    </style>
+
+
+</head>
+<body>
+    <header><h3> 🥄Delicious Recipes🥄</h3></header>
+    <nav>
+        <a href="home.html" >Home</a>
+        <a href="recipes.html" >Recipes</a>
+        <a href="popular.html" class="active2" >Popular Foods</a>
+        <a href="aboutus.html" >About Us</a>
+        
+    </nav>
+
+    <h2>Popular Foods</h2>
+
+        <p>Here we have a list of top 10 most popular foods among the recipes.Discover the reasons to why they are popular and what makes them different from other recipes. </p>
+
+    <div class="container">
+        <div class="food-item">
+            <img src="scrambledeggs.jpg" alt="Scrambled Eggs">
+            <div class="food-title">Scrambled Eggs</div>
+            <div class="food-content">
+                <b><h4>Why is it popular?</h4></b>
+                
+                <p>Eggs have been eaten for thousands of years, with scrambled eggs likely originating in ancient Persia. They became popular worldwide due to their simplicity, versatility, and nutritional value. The dish is made by whisking eggs and cooking them gently, often with butter or milk for a creamy texture.</p>
+                
+             
+                    
+                    
+            </div>
+        </div>
+
+        
+        <div class="food-item">
+            <img src="grilled_cheese.webp" alt="Grilled Cheese Sandwich">
+            <div class="food-title">Grilled Cheese Sandwich</div>
+            <div class="food-content">
+                <b><h4>Why is it popular?</h4></b>
+
+             
+                
+                <p>
+                    Peanut butter was first developed by the Aztecs and later became a staple in American diets. Paired with bananas (which gained mass popularity in the U.S. in the late 1800s), this combination is favored for its sweet, creamy, and nutritious balance, often credited to Elvis Presley for making it famous.</p>            
+            </div>
+        </div>
+
+        <div class="food-item">
+            <img src="quickoatmeal2.jpg" alt="Quick Oatmeal">
+            <div class="food-title">Quick Oatmeal</div>
+            <div class="food-content">
+                <b><h4>Why is it popular?</h4></b>
+
+             
+                
+                <p>
+                    Oats have been consumed for thousands of years, but instant oatmeal became widespread in the 1960s for its convenience. It’s a warm, filling, and heart-healthy breakfast that can be prepared in minutes with water or milk and customized with fruits, nuts, or sweeteners.</p>
+            </div>
+        </div>
+
+        <div class="food-item">
+            <img src="simplepastawithbutterandgarlic - Copy.jpg" alt="Butter & Garlic Pasta">
+            <div class="food-title">Butter and Garlic Pasta</div>
+            <div class="food-content">
+                <b><h4>Why is it popular?</h4></b>
+
+             
+                
+                <p>
+                    Pasta dates back to ancient Italy, and this minimalist version likely originated as a quick, affordable meal. The combination of garlic, butter, and pasta creates a rich, comforting dish that’s easy to prepare and universally loved.
+                </p>
+            </div>
+        </div>
+
+       
+        <div class="container">
+            <div class="food-item">
+                <img src="avocadotoast2.jpg" alt="Avocado Toast">
+                <div class="food-title">Avocado Toast</div>
+                <div class="food-content">
+                <b><h4>Why is it popular?</h4></b>
+
+             
+                
+                <p>
+                    Avocados have been eaten for centuries, but avocado toast became a food trend in the 2010s, popularized by cafes in Australia and California. It’s praised for its creamy texture, healthy fats, and endless topping possibilities.
+                </p>
+            </div>   
+        </div>
+
+        <div class="food-item">
+            <img src="boiled eggs - Copy.jpg" alt="Boiled Eggs"> 
+            <div class="food-title">Boiled Eggs</div>
+            <div class="food-content">              
+                <b><h4>Why is it popular?</h4></b>
+
+             
+                
+                <p>
+                    People have been boiling eggs since ancient times, as they are one of the easiest ways to cook and preserve them. Boiled eggs are popular because they are nutritious, easy to prepare, and great for meal prep.
+                
+                </p>
+            </div>
+        </div>    
+
+        <div class="food-item">
+            <img src="fruitsalad - Copy.jpg" alt="Fruit Salad">
+            <div class="food-title">Fruit Salad</div>
+            <div class="food-content">
+                <b><h4>Why is it popular?</h4></b>
+
+             
+                
+                <p>
+                    The concept of mixing fruits dates back to ancient Rome, but modern fruit salads became popular in the 19th century as a refreshing, vitamin-packed dish. It’s loved for its natural sweetness, vibrant colors, and health benefits.
+                
+                </p>
+            </div>    
+        </div>
+
+        <div class="food-item">
+            <img src="instanramen - Copy.jpg" alt="Instant Ramen">
+            <div class="food-title">Insant Ramen</div>
+            <div class="food-content">
+                <b><h4>Why is it popular?</h4></b>
+
+             
+                
+                <p>
+                    Invented in Japan in 1958 by Momofuku Ando, instant ramen was created as an affordable, quick meal after World War II. It remains popular worldwide due to its convenience, long shelf life, and comforting flavors.
+                
+                </p>
+
+            </div>                 
+        </div>
+
+        <div class="food-item">
+            <img src="greekyogurtwithhoney2.jpg" alt="Greek Yogurt with Honey">
+            <div class="food-title">Greek Yogurt with Honey</div>
+            <div class="food-content">
+                <b><h4>Why is it popular?</h4></b>
+
+             
+                
+                <p>
+                    Greek yogurt has been a staple in Mediterranean diets for centuries, known for its thick texture and high protein content. When paired with honey, it creates a naturally sweet and creamy dish that’s both nutritious and satisfying.
+                
+                </p>
+            </div>    
+        </div>
+        <div class="food-item">
+            <img src="sunnysideup - Copy.jpg" alt="Sunny Sideup">
+            <div class="food-title">Sunny Sideup</div>
+            <div class="food-content">
+                <b><h4>Why is it popular?</h4></b>
+
+                <p>
+
+                    Sunny side up eggs are popular because they're simple to make, visually appealing with their vibrant yolk, and offer a rich, creamy texture when eaten. They're also versatile and pair well with many dishes.
+
+                </p>
+            </div>
+        </div>        
+    </div>
+
+    <br>
+    <br>
+   
+    <footer>© 2025 Delicious Recipes. All rights reserved.</footer>
+</body>
+</html>

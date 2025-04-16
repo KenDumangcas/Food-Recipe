@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Delicious Recipes</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+
+body {
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f5f5f5;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background: #ff5722;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;   
+}
+
+nav {
+    background: #333;
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 20px;
+    transition: background 0.3s;
+}
+
+nav a.active2{
+
+    background-color: #ff5722;
+    font-weight: bold;
+    border-radius: 15px;
+
+}
+nav a:hover:not(.active2){
+    background-color: gray;
+    border-radius: 15px;
+}
+
+
+.aboutus {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.aboutus h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff5722;
+}
+
+.aboutus h3 {
+    text-align: center;
+    margin: 40px 0 20px;
+    color: #333;
+}
+
+.aboutus .intro,
+.aboutus .closing {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.team-member {
+    flex: 1 1 300px;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    text-align: left;
+
+}
+
+    </style>
+
+</head>
+<body>
+    <header><h3> 🥄Delicious Recipes🥄</h3></header>
+    <nav>
+
+        <a href="home.html" >Home</a>
+        <a href="recipes.html" >Recipes</a>
+        <a href="popular.html" >Popular Foods</a>
+        <a href="aboutus.html" class="active2" >About Us</a>
+
+    </nav>
+    <h2>About Us</h2>
+    <div class="aboutus-container">
+        <section id="about" class="aboutus">
+            
+            <p class="intro">
+                🍽️ Welcome to <strong>Delicious Recipes</strong> – your go-to source for delicious, easy-to-follow recipes that inspire your cooking adventures!
+                Whether you're a seasoned chef or just starting out, our mission is to bring people together through the love of food.
+            </p>
+    
+            <p class="intro">
+                We believe in cooking from the heart, experimenting with new flavors, and, most importantly, enjoying the process. From quick weeknight dinners to special occasion feasts, our recipes are designed to fit every lifestyle and skill level.
+            </p>
+    
+            <p class="intro">
+                At Delicious Recipes, we share not just recipes, but stories. Our goal is to make cooking fun, accessible, and rewarding. Join us as we explore fresh ideas, tried-and-true favorites, and everything in between. Let’s make every meal memorable!
+            </p>
+
+    
+            <h3>👨‍🍳 Meet Our Team</h3>
+            <div class="team-grid">
+    
+                <div class="team-member">
+                    <p>🥄 <strong>Earl</strong> – <em>Founder</em><br>
+                        Earl started Delicious Recipes with a simple idea: food should bring joy, not stress. With years of experience and a love for creative home cooking, he brings balance, flavor, and fun to every dish.
+                    </p>
+                </div>
+    
+                <div class="team-member">
+                    <p>🍅 <strong>Vinchy & Kharlo</strong> – <em> Back-end developer</em><br>
+                        With an eye for detail and a camera always ready, Vinchy and Kharlo ensures that the website works perfectly.
+                    </p>
+                </div>
+    
+                <div class="team-member">
+                    <p>🌿 <strong>Christian</strong> – <em>Producer</em><br>
+                        From balanced meals to dietary tips, Christian brings health-conscious insights to ensure recipes suit every lifestyle.
+                    </p>
+                </div>
+    
+                <div class="team-member">
+                    <p>🔥 <strong>Psyphare & Scyther</strong> – <em>Front-end developer</em><br>
+                        Always experimenting in the kitchen and making the web page design.
+                    </p>
+                </div>
+            
+                <div class="team-member">
+                    <p>🍽️ <strong>Alexander & Francis</strong> – <em>Quality Tester</em><br>
+                        Strict about the website's quality, design, and consistency.
+                    </p>
+                </div>
+
+                <div class="team-member">
+                    <p>😎 <strong>Francis</strong> – <em>UX designer/Graphic designer</em><br>
+                        Creative and imaginative, making sure the design alligns with the context of the page.
+                    </p>
+                </div>
+            </div>
+    
+            <p class="closing">
+                Together, we’re here to help you feel confident in the kitchen and have fun along the way. So grab your apron and let’s make something amazing together!
+            </p>
+        </section>
+    </div>
+
+    <br>
+    <br>
+   
+    <footer>© 2025 Delicious Recipes. All rights reserved.</footer>
+</body>
+</html>

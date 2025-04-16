@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Delicious Recipes</title>
+   
+    
+    <style>
+
+        
+
+body {
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f5f5f5;
+    align-items: center;
+    justify-content: center;
+}
+
+.food-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    gap: 20px;
+}
+.container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+header {
+    background: #ff5722;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;   
+}
+
+
+
+nav {
+    background: #333;
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 20px;
+    transition: background 0.3s;
+}
+
+nav a.active2{
+
+    background-color: #ff5722;
+    font-weight: bold;
+    border-radius: 15px;
+
+}
+nav a:hover:not(.active2){
+    background-color: gray;
+    border-radius: 15px;
+}
+
+            
+            
+
+.food-item {
+            text-align: center;
+            width: 300px;
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.15s ease-in-out;
+
+}       
+.food-item:hover{
+            transform: scale(1.02);
+}
+.food-item h3 {
+            background: #ffcc80;
+            padding: 10px;
+            border-radius: 20px;
+            margin: 0;
+            
+        }
+.food-content {
+            text-align: center;
+            width: 250px;
+            display: none;
+            text-align: left;
+            padding: 10px;
+        }
+.food-item img{
+            
+
+    width: 150px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 20px;
+    height: 100px;
+
+}
+.aboutus{
+        text-align: justify;
+
+    }
+
+
+
+
+.recipes {
+    
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    
+ 
+}
+
+.recipe {
+    
+    display: flex;
+    flex-direction: column; 
+    align-items: center;     
+    position: relative;
+    width: 250px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.recipe img {
+    width: 250px;
+    height: 160;
+    border-radius: 20x;
+    transition: transform 0.3s;
+
+}
+.recipe img:hover {
+    transform: scale(1.1);
+}
+
+p {
+    background-image: url('img_girl.jpg');
+}
+
+.page-borders{
+    border: gray;
+    border-radius: 20x;
+}
+.recipe-gallery{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+   
+
+}
+
+
+.recipe-gallery img{
+
+    border-radius: 20px;
+    width: 250px;
+    display: block;
+    margin: 10px auto;
+    height: 160px;
+
+}
+
+
+   
+    </style>
+
+</head>
+<body>
+
+    <header><h3> 🥄Delicious Recipes🥄</h3></header>
+    <nav>
+        <a href="home.html" class="active2" >Home</a>
+        <a href="recipes.html" >Recipes</a>
+        <a href="popular.html" >Popular Foods</a>
+        <a href="aboutus.html" >About Us</a>
+        
+    </nav>
+    <p style="background-image: url('bgimg2.jpg');"></p>
+    <h2>Welcome to Delicious Recipes</h2>
+    <p>Discover the best homemade recipes that bring joy and flavor to your kitchen.</p>
+
+
+
+    <div class="container">
+
+        <section id="recipes" >
+            <h3>🍽️ Featured Recipes</h3>
+            <p">Quick, delicious, and healthy meals to inspire your day!</p>
+            <div class="recipe-gallery">
+        
+                <div class="recipe">
+                    <img src="simpletoast.jpg" alt="Simple Toast">
+                    <h3>Simple Toast</h3>
+                    <p>A delicious, quick and easy meal.</p> <br>
+                    <iframe width="250" height="160" src="https://www.youtube.com/embed/uxBkWzXihUo?si=R2k5IJNdAJY1P2rq" title="Simple Toast Video" frameborder="0" allowfullscreen style="margin-top: 10px; border-radius: 10px;"></iframe>
+                </div>
+        
+                <div class="recipe">
+                    <img src="bananasmoothie.jpg" alt="Banana Smoothie">
+                    <h3>Banana Smoothie</h3>
+                    <p>A healthy and delicious banana dessert.</p>
+                    <iframe width="250" height="160" src="https://www.youtube.com/embed/wfHADzgF_P4?si=dCCElQTOmf5PDW4g" title="Banana Smoothie Video" frameborder="0" allowfullscreen style="margin-top: 10px; border-radius: 10px;"></iframe>
+                </div>
+        
+                <div class="recipe">
+                    <img src="fruitsalad - Copy.jpg" alt="Fruit Salad" >
+                    <h3>Fruit Salad</h3>
+                    <p >A refreshing mix of seasonal fruits.</p> <br>
+                    <iframe width="250" height="160" src="https://www.youtube.com/embed/nTm-_KujooY?si=-YI3QIgoNOYRvfHR" title="Fruit Salad Video" frameborder="0" allowfullscreen style="margin-top: 10px; border-radius: 10px;"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <br>
+        <br>
+        
+    </div>
+    
+    <br>
+    <br>
+
+    <footer> © 2025 Delicious Recipes. All rights reserved.</footer>
+   
+
+
+
+</body>
+</html>

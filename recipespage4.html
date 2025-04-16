@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Foods</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+    header {
+    background: #ff5722;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;   
+    }
+    nav {
+    background: #333;
+    padding: 10px;
+    text-align: center;
+    }
+    nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 20px;
+    transition: background 0.3s;
+    }
+    body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    }
+
+    h2 {
+    font-size: 36px;
+    color: black;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    }
+
+    .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    }
+
+    .food-item {
+    width: 260px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    }
+
+    .food-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+    }
+
+    .food-item img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    }
+
+    .food-title {
+    background-color: #ffcc80;
+    color: #333;
+    padding: 12px 0;
+    font-weight: bold;
+    font-size: 18px;
+            
+    }
+
+    .food-content {
+    padding: 20px;
+    text-align: left;
+    font-size: 15px;
+    color: #333;
+    }
+
+    .food-content h4 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #ff5722;
+    }
+
+    .food-content ul {
+    padding-left: 20px;
+    margin-bottom: 10px;
+    }
+
+    .food-content p {
+    margin-top: 5px;
+    line-height: 1.5;
+    }
+
+    .pagination {
+    margin-top: 30px;
+    }
+
+    .pagination a {
+    display: inline-block;
+    padding: 10px 14px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #ff5722;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
+    }
+
+    .pagination a:hover,
+    .pagination a.active {
+     background-color: #ff5722;
+        color: #fff;
+    }
+    nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 20px;
+    transition: background 0.3s;
+    }
+
+    nav a.active2{
+
+    background-color: #ff5722;
+    font-weight: bold;
+    border-radius: 15px;
+
+    }
+    nav a:hover:not(.active2){
+    background-color: gray;
+    border-radius: 15px;
+    }
+    </style>
+</head>
+<body>
+
+    <header><h3> 🥄Delicious Recipes🥄</h3></header>
+    <nav>
+        <a href="home.html" >Home</a>
+        <a href="recipes.html" class="active2">Recipes</a>
+        <a href="popular.html" >Popular Foods</a>
+        <a href="aboutus.html" >About Us</a>
+        
+    </nav>
+
+    <h2>Simple Foods</h2>
+    <p>Feel free to write down our recipes! We are glad to help you with your cooks.</p>
+    <div class="container">
+        <div class="food-item">
+            <img src="eggfriedbread.jpg" alt="Egg Fried Bread">
+            <div class="food-title">Egg Fried Bread</div>
+            <div class="food-content">
+                <h4>Ingredients:</h4>
+                <p>
+
+                    <ul>
+
+                        <li>2 slices of bread</li>
+                        <li>1 egg</li>
+                        <li>2 tbsp milk (optional, for fluffiness)</li>
+                        <li>Salt & pepper to taste</li>
+                        <li>½ tsp butter or oil</li>
+                        <li>¼ tsp chili flakes (optional)</li>
+                        <li>¼ tsp garlic powder (optional, for extra flavor)</li>
+
+                    </ul>
+                </p>
+            
+                    <h4>Instructions:</h4>
+                <p>
+                    1. In a bowl, whisk the egg, milk, salt, pepper, and any optional seasonings. <br>
+                    2. Heat a pan over medium heat and add butter or oil. <br>
+                    3. Dip the bread slices into the egg mixture, coating both sides. <br>
+                    4. Place the soaked bread on the pan and cook for about 2 minutes on each side until golden brown. <br>
+                    5. Serve hot with ketchup, chutney, or a side of fresh salad.
+                </p>
+
+            </div>
+        </div>
+
+        <div class="food-item">
+            <img src="homemadepopcorn2.jpg" alt="Homemade Popcorn">
+            <div class="food-title">Homemade Popcorn</div>
+            <div class="food-content">
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>½ cup popcorn kernels</li>
+                    <li>2 tbsp oil (vegetable, coconut, or butter)</li>
+                    <li>½ tsp salt (adjust to taste)</li>
+                    <li>1 tbsp melted butter, cheese powder, or caramel for extra flavor(optional)</li>                                                             
+                </ul>
+            
+                <h4>Instructions:</h4>
+                <p>
+                    1. Heat oil in a large pot over medium heat. Add 2-3 kernels and cover the pot. <br>
+                    2. Once they pop, add the rest of the popcorn kernels in an even layer. <br>
+                    3. Cover the pot and shake it gently every few seconds to prevent burning. <br>
+                    4. When popping slows down (about 2-3 seconds between pops), remove from heat. <br>
+                    5. Pour the popcorn into a bowl, sprinkle with salt, and mix well. <br>
+                    6. Optional: Drizzle melted butter or add cheese/caramel for extra flavor.
+                </p>
+
+            </div>
+        </div>
+
+        <div class="food-item">
+            <img src="friedrice.jpg" alt="Fried Rice">
+            <div class="food-title">Fried Rice</div>
+            <div class="food-content">
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 cup cooked rice (preferably cold)</li>
+                    <li>1 tbsp oil (vegetable or sesame)</li>
+                    <li>½ cup mixed vegetables (carrots, peas, corn, etc.)</li>
+                    <li>1 egg (optional)</li>
+                    <li>1 tbsp soy sauce</li>
+                    <li>½ tsp salt (adjust to taste)</li>
+                    <li>¼ tsp black pepper</li>
+                    <li>1 clove garlic, minced (optional)</li>
+                    <li>1 green onion, chopped (for garnish)</li>
+                </ul>
+
+                <h4>Instructions:</h4>
+
+                <p>
+                    1. Heat oil in a pan or wok over medium-high heat. <br>
+                    2. f using an egg, scramble it in the pan, then remove and set aside. <br>
+                    3. Add garlic (if using) and sauté for a few seconds. Then, add mixed vegetables and cook for 2-3 minutes. <br>
+                    4. Add the rice and stir-fry for another 2-3 minutes.  <br>             
+                    5. Pour in soy sauce, salt, and black pepper. Mix well. <br>              
+                    6. If you set aside the egg, add it back now. Stir everything together. <br>
+                    7. Garnish with green onions and serve hot. <br>
+                </p>
+
+            </div>
+        </div>
+
+        <div class="food-item">
+            <img src="mashedpotato.jpg" alt="Mashed Potatoes">
+            <div class="food-title">Mashed Potatoes</div>
+            <div class="food-content">
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>3 large potatoes (peeled and chopped)</li>
+                    <li>2 tbsp butter</li>
+                    <li>¼ cup milk (adjust as needed)</li>
+                    <li>½ tsp salt (or to taste)</li>
+                    <li>¼ tsp black pepper</li>
+                    <li>1 clove garlic, minced (optional, for extra flavor)</li>
+                    <li>Fresh parsley or chives (for garnish)</li>              
+                </ul>
+
+                <h4>Instructions:</h4>
+                <p>
+                    1. Boil the potatoes in a pot of salted water for about 15-20 minutes or until fork-tender. <br>
+                    2. Drain the water and mash the potatoes while they are still hot. <br>               
+                    3. Add butter, milk, salt, and black pepper. Mix well until smooth and creamy. <br>           
+                    4. For extra flavor, add minced garlic while mashing. <br>           
+                    5. Garnish with fresh parsley or chives and serve warm.
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="pagination">
+
+        <a href="recipes.html">1</a>
+        <a href="recipespage2.html">2</a>
+        <a href="recipespage3.html">3</a>
+        <a href="recipespage4.html" class="active">4</a>
+        <a href="recipespage5.html">5</a>
+
+    </div>
+
+    <br>
+    <br>
+   
+    <footer>© 2025 Delicious Recipes. All rights reserved.</footer>
+</center>
+    
+</body>
+</html>

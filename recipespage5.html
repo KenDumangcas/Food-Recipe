@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Foods</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+    header {
+    background: #ff5722;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;   
+    }
+
+    body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    }
+
+    h2 {
+    font-size: 36px;
+    color: black;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    }
+
+    .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    }
+
+    .food-item {
+    width: 260px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    }
+
+    .food-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+    }
+
+    .food-item img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    }
+
+    .food-title {
+    background-color: #ffcc80;
+    color: #333;
+    padding: 12px 0;
+    font-weight: bold;
+    font-size: 18px;
+            
+    }
+
+    .food-content {
+    padding: 20px;
+    text-align: left;
+    font-size: 15px;
+    color: #333;
+    }
+
+    .food-content h4 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #ff5722;
+    }
+
+    .food-content ul {
+    padding-left: 20px;
+    margin-bottom: 10px;
+    }
+
+    .food-content p {
+    margin-top: 5px;
+    line-height: 1.5;
+    }
+
+    .pagination {
+    margin-top: 30px;
+    }
+
+    .pagination a {
+    display: inline-block;
+    padding: 10px 14px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #ff5722;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
+    }
+
+    .pagination a:hover,
+    .pagination a.active {
+     background-color: #ff5722;
+        color: #fff;
+    }
+
+    nav {
+    background: #333;
+    padding: 10px;
+    text-align: center;
+    }
+    nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 20px;
+    transition: background 0.3s;
+    }
+
+    nav a.active2{
+
+    background-color: #ff5722;
+    font-weight: bold;
+    border-radius: 15px;
+
+    }
+    nav a:hover:not(.active2){
+    background-color: gray;
+    border-radius: 15px;
+    }
+
+    </style>
+</head>
+<body>
+
+    <header><h3> 🥄Delicious Recipes🥄</h3></header>
+    <nav>
+        <a href="home.html" >Home</a>
+        <a href="recipes.html" class="active2">Recipes</a>
+        <a href="popular.html" >Popular Foods</a>
+        <a href="aboutus.html" >About Us</a>
+        
+    </nav>
+
+    <h2>Simple Foods</h2>
+    <p>Feel free to write down our recipes! We are glad to help you with your cooks.</p>
+    <div class="container">
+        <div class="food-item">
+            <img src="bakedsweetpotato.jpg" alt="Baked Sweet Potato">
+            <div class="food-title">Baked Sweet Potato</div>
+            <div class="food-content">
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>Honey</li>
+                    <li>Greek Yogurt</li>
+                    <li>Wallnuts(optional)</li>
+                </ul>
+            
+                    <h4>Instructions:</h4>
+                <p>
+                    1. Prepare both the honey and the greek yogurt. <br>
+                    2. Place both in a clean bowl. <br>
+                    3. Mix well and serve. <br>
+               
+                </p>
+
+            </div>
+        </div>
+
+        <div class="food-item">
+            <img src="bananapancakes.jpg" alt="Banana Pancakes">
+            <div class="food-title">Banana Pancakes</div>
+            <div class="food-content">
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 Banana</li>
+                    <li>Eggs</li>
+                    <li>Sugar to taste</li>           
+                </ul>
+            
+                <h4>Instructions:</h4>
+                <p>
+                    1. Mash banana and mix with the egg. <br>
+                    2. Pour small amounts into a pan like pancakes. <br>
+                    3. Plate then serve.
+                </p>
+
+            </div>
+        </div>
+
+        <div class="food-item">
+            <img src="simplepastawithbutterandgarlic - Copy.jpg" alt="Simple Pasta with Butter & Garlic">
+            <div class="food-title">Butter and Garlic Pasta</div>
+            <div class="food-content">
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 cup pasta</li>
+                    <li>1 tbsp butter</li>
+                    <li>1 garlic clove, minced</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <p> 
+                    1. Boil pasta and drain. <br>
+                    2. Melt butter, sauté garlic. <br>
+                    3. Toss pasta in butter and garlic. <br>
+                    4. Serve warm.
+                </p>
+            
+            </div>
+        </div>
+
+        <div class="food-item">
+            <img src="greekyogurtwithhoney2.jpg" alt="Greek Yogurt with Honey">
+            <div class="food-title">Greek Yogurt with Honey</div>
+            <div class="food-content">
+                <h4>Ingredients:</h4>
+                <ul>
+
+                    <li>1 cup Greek yogurt (plain or vanill)</li>
+                    <li>tbsp honey (preferably raw or local)</li>
+                    <li>2 tbsp chopped nuts (like walnuts or almonds)</li>
+                    <li>Fresh fruits (optional – berries, banana slices, figs)</li>
+                    <li>A sprinkle of cinnamon (optional)</li>
+
+
+
+                </ul>
+                <h4>Instructions:</h4>
+                    1. Scoop the Greek yogurt into a serving bowl.
+
+                    2. Drizzle the honey generously over the yogurt.
+
+                    3. Top with chopped nuts for crunch.
+
+                    4. Add fresh fruits if desired.
+
+                    5. Sprinkle a pinch of cinnamon for extra flavor.
+
+                    6. Serve immediately & enjoy!
+
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="pagination">
+
+        <a href="recipes.html">1</a>
+        <a href="recipespage2.html">2</a>
+        <a href="recipespage3.html">3</a>
+        <a href="recipespage4.html">4</a>
+        <a href="recipespage5.html" class="active">5</a>
+
+    </div>
+
+    <br>
+    <br>
+   
+    <footer>© 2025 Delicious Recipes. All rights reserved.</footer>
+</center>
+    
+</body>
+</html>
